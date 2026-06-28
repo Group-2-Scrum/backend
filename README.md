@@ -54,3 +54,29 @@ HTTP Method & Path: POST /api/resources
 ### Delete Resource Entry
 HTTP Method & Path: DELETE /api/resources/:id
 
+### Render Link
+https://backend-23nu.onrender.com/api/...
+
+## Examples for user registration
+
+```bash
+curl --request POST \
+  --url https://backend-23nu.onrender.com/api/register \
+  --header 'Content-Type: application/json' \
+  --data '{
+	"email": "[EMAIL_ADDRESS]",
+	"password": "password123"
+}'
+```
+
+
+## Example for user login
+
+```bash
+curl --request POST \
+  --url https://backend-23nu.onrender.com/api/login \
+  --header 'Content-Type: application/json' \
+  --data '{
+	"email": "[EMAIL_ADDRESS]",
+	"password": "[PASSWORD]"
+}'
