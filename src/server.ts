@@ -4,7 +4,7 @@ import dotenv from 'dotenv';
 import dns from 'dns';
 import { AppError } from './error';
 import { requestLogger } from './middleware';
-import authRoutes from './authroutes';
+import authRoutes from './authRoutes';
 
 dns.setDefaultResultOrder('ipv4first');
 dotenv.config();
